@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "V9WeKmvBo4rfyfvpMbaw/WyWM3L2EKvKG2unY9zBrK36ztH8Jx6tG/glKNFdG41MqpYddv24q4vkRxJurbFB6g==",
+  "success": true,
+  "projectFilePath": "/home/cypher/Documents/NMAD262-2215-sample-code/web_scraping/c-sharp/weather/weather.csproj",
+  "expectedPackageFiles": [
+    "/home/cypher/.nuget/packages/htmlagilitypack/1.11.39/htmlagilitypack.1.11.39.nupkg.sha512"
+  ],
+  "logs": []
+}

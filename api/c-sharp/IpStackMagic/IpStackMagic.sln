@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IpStackMagic", "IpStackMagic\IpStackMagic.csproj", "{97AD8432-8FAA-469E-8BF3-824D2479BBE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97AD8432-8FAA-469E-8BF3-824D2479BBE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97AD8432-8FAA-469E-8BF3-824D2479BBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97AD8432-8FAA-469E-8BF3-824D2479BBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97AD8432-8FAA-469E-8BF3-824D2479BBE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {368C15AB-68B6-44FD-A517-AF273BA1EA6F}
+	EndGlobalSection
+EndGlobal

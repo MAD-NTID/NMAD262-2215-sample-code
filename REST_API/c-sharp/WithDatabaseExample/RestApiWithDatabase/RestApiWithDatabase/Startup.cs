@@ -14,6 +14,9 @@ using System.Threading.Tasks;
 
 using Microsoft.EntityFrameworkCore;
 using RestApiWithDatabase.Repositories;
+using Microsoft.AspNetCore.Authentication;
+using RestApiWithDatabase.Services;
+
 namespace RestApiWithDatabase
 {
     public class Startup
@@ -39,6 +42,10 @@ namespace RestApiWithDatabase
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RestApiWithDatabase", Version = "v1" });
             });
 
+            services.AddAuthentication("BasicAuthentication")
+                .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationAttribute>("BasicAuthentication", null);
+
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IMovieRepository, MovieRepository>();
         }
 
@@ -56,6 +63,7 @@ namespace RestApiWithDatabase
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

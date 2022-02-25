@@ -21,9 +21,10 @@ namespace RestApiWithDatabase.Repositories
             return await this.database.Movies.ToListAsync();
         }
 
-        public Task<MovieModel> Create(MovieModel movie)
+        public async Task<MovieModel> Create(MovieModel movie)
         {
-            throw new NotImplementedException();
+            await this.database.AddAsync(movie);
+            return movie;
         }
 
         public void Delete(int movieId)

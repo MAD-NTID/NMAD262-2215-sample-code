@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using RestApiWithDatabase.Repositories;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RestApiWithDatabase.Controllers
 {
+    [Authorize]
     [Route("api/movies")]
     [ApiController]
     public class MovieController : ControllerBase

@@ -32,6 +32,7 @@ namespace RestApiWithDatabase.Exceptions
             //by default we assume a system error
             int statusCode = 500;
             string message = "An internal error occurred while processing your request";
+            
 
             //error is an instance of user exception error so we want to show that error to the user
             if (exception is IUserErrorException)

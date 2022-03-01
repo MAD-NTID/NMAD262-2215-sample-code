@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "28osfFKjWllpzr2y5yEQUAoLkpxQl/87FWLPKRhGqqmbVJDwnf5yLmAd3A7N4O/TmUeuptEuUj14fimmxx1t7Q==",
+  "dgSpecHash": "vm/M/RI2JrhQPwcplsQxeaVw/Ja6Y1hwH5AUXy6IYTp9z5cfbYwVnQOPtOQ5zaLiZMOVQ/1xpAueL9VOvskZxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xamarin_2355\\source\\repos\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj",
+  "projectFilePath": "C:\\Users\\xamarin_2355\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xamarin_2355\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.10\\microsoft.entityframeworkcore.5.0.10.nupkg.sha512",
     "C:\\Users\\xamarin_2355\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.10\\microsoft.entityframeworkcore.abstractions.5.0.10.nupkg.sha512",

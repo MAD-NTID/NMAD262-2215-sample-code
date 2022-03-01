@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RestApiWithDatabase.Repositories;
 using Microsoft.AspNetCore.Authentication;
+using RestApiWithDatabase.Exceptions;
 using RestApiWithDatabase.Services;
 
 namespace RestApiWithDatabase
@@ -58,6 +59,8 @@ namespace RestApiWithDatabase
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "RestApiWithDatabase v1"));
             }
+
+            app.UseMiddleware<ExceptionHandlerMiddleware>();
 
             app.UseHttpsRedirection();
 

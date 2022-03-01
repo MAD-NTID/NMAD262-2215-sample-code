@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using Microsoft.EntityFrameworkCore;
+using RestApiWithDatabase.Exceptions;
 using RestApiWithDatabase.Models;
 
 namespace RestApiWithDatabase.Repositories
@@ -34,7 +35,15 @@ namespace RestApiWithDatabase.Repositories
 
         public async Task<MovieModel> Get(int movieId)
         {
-            return await this.database.Movies.FirstOrDefaultAsync(movie => movie.Id == movieId);
+            if (movieId < 0)
+                throw new UserErrorException(400, "Movie id must be a positive number!");
+            
+            MovieModel model = await this.database.Movies.FirstOrDefaultAsync(movie => movie.Id == movieId);
+
+            if (model ==null)
+                throw new UserErrorException(404, $"No movie with the {movieId} found!");
+
+            return model;
         }
 
         public Task<MovieModel> Update(MovieModel movie)

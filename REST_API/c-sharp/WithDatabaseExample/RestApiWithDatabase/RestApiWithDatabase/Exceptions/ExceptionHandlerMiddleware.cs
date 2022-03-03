@@ -3,22 +3,35 @@ using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using RestApiWithDatabase.Services;
 
 namespace RestApiWithDatabase.Exceptions
 {
     public class ExceptionHandlerMiddleware
     {
         private readonly RequestDelegate next;
+        private readonly ILoggerManager logger;
 
-        public ExceptionHandlerMiddleware(RequestDelegate next, ILoggerFactory logger)
+        public ExceptionHandlerMiddleware(RequestDelegate next, ILoggerManager logger)
         {
             this.next = next;
+            this.logger = logger;
         }
 
         public async Task InvokeAsync(HttpContext context)
         {
             try
             {
+                string info = context.Request.Path;
+                
+                //using var reader = new StreamReader(context.Response.Body);
+                
+                // reader.BaseStream.Seek(0, SeekOrigin.Begin); 
+                // var body = await reader.ReadToEndAsync();
+                //
+                //
+                // info += " "+ body;
+                this.logger.Info(info);
                 await next(context);
             }
             catch (Exception e)
@@ -47,9 +60,11 @@ namespace RestApiWithDatabase.Exceptions
             if (statusCode == 500)
             {
                 //log this
-                StreamWriter file = new("log.txt", true);
-                string error = exception.Message + "\n" + exception.StackTrace;
-                file.WriteLine(error);
+                // StreamWriter file = new("log.txt", true);
+                // 
+                // file.WriteLine(error);
+                string error = "\n\n"+exception.Message + "-" + exception.StackTrace;
+                this.logger.Error(error);
             }
 
             ErrorDetail detail = new ErrorDetail() {Message = message, StatusCode = statusCode};

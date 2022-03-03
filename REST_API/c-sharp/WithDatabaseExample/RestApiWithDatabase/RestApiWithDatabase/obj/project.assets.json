@@ -188,6 +188,15 @@
           "lib/net5.0/MySqlConnector.dll": {}
         }
       },
+      "NLog/5.0.0-rc2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/5.0.4": {
         "type": "package",
         "dependencies": {
@@ -607,6 +616,30 @@
         "mysqlconnector.nuspec"
       ]
     },
+    "NLog/5.0.0-rc2": {
+      "sha512": "F+y9t2obY9y0bxAaxvJJtbpBqFWkkqXZjMJPeT3SLqVvSNZq7aFax5cu57hkssHSDF1C/RsHT5uymcmPXgY9Vw==",
+      "type": "package",
+      "path": "nlog/5.0.0-rc2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.0.0-rc2.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
     "Pomelo.EntityFrameworkCore.MySql/5.0.4": {
       "sha512": "R5LDFDaCO/Si09tEWbgQoYwLsCYPG3Qm6Q7zICFDF8zZ7gr64fgyBLBtOxhGtJBmbpImFVI6GfcYf2JAROGaZA==",
       "type": "package",
@@ -831,6 +864,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "NLog >= 5.0.0-rc2",
       "Pomelo.EntityFrameworkCore.MySql >= 5.0.4",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -882,6 +916,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "NLog": {
+            "target": "Package",
+            "version": "[5.0.0-rc2, )"
+          },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[5.0.4, )"

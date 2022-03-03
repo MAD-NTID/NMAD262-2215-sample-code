@@ -1,0 +1,2 @@
+2022-03-03 12:26:04.5724 RestApiWithDatabase.Services.LoggerManager /api/movies
+2022-03-03 12:26:10.0856 RestApiWithDatabase.Services.LoggerManager /api/movies

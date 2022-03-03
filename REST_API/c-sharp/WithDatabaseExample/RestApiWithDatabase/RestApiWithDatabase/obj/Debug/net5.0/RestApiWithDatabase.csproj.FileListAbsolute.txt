@@ -70,3 +70,5 @@ C:\Users\xamarin_2355\Desktop\NMAD262-2215-sample-code\REST_API\c-sharp\WithData
 C:\Users\xamarin_2355\Desktop\NMAD262-2215-sample-code\REST_API\c-sharp\WithDatabaseExample\RestApiWithDatabase\RestApiWithDatabase\obj\Debug\net5.0\ref\RestApiWithDatabase.dll
 C:\Users\xamarin_2355\Desktop\NMAD262-2215-sample-code\REST_API\c-sharp\WithDatabaseExample\RestApiWithDatabase\RestApiWithDatabase\obj\Debug\net5.0\RestApiWithDatabase.pdb
 C:\Users\xamarin_2355\Desktop\NMAD262-2215-sample-code\REST_API\c-sharp\WithDatabaseExample\RestApiWithDatabase\RestApiWithDatabase\obj\Debug\net5.0\RestApiWithDatabase.genruntimeconfig.cache
+C:\Users\xamarin_2355\Desktop\NMAD262-2215-sample-code\REST_API\c-sharp\WithDatabaseExample\RestApiWithDatabase\RestApiWithDatabase\bin\Debug\net5.0\nlog.config
+C:\Users\xamarin_2355\Desktop\NMAD262-2215-sample-code\REST_API\c-sharp\WithDatabaseExample\RestApiWithDatabase\RestApiWithDatabase\bin\Debug\net5.0\NLog.dll

@@ -9,14 +9,17 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
 using Microsoft.EntityFrameworkCore;
 using RestApiWithDatabase.Repositories;
 using Microsoft.AspNetCore.Authentication;
+using NLog;
 using RestApiWithDatabase.Exceptions;
 using RestApiWithDatabase.Services;
+using ILogger = NLog.ILogger;
 
 namespace RestApiWithDatabase
 {
@@ -24,6 +27,8 @@ namespace RestApiWithDatabase
     {
         public Startup(IConfiguration configuration)
         {
+            string nLogPath = Directory.GetCurrentDirectory() + "/nlog.config";
+            LogManager.LoadConfiguration(nLogPath);
             Configuration = configuration;
         }
 
@@ -46,6 +51,7 @@ namespace RestApiWithDatabase
             services.AddAuthentication("BasicAuthentication")
                 .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationAttribute>("BasicAuthentication", null);
 
+            services.AddSingleton<ILoggerManager, LoggerManager>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IMovieRepository, MovieRepository>();
         }

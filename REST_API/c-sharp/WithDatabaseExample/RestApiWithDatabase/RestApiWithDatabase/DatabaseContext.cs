@@ -17,6 +17,8 @@ namespace RestApiWithDatabase
         }
 
         public DbSet<MovieModel> Movies { get; set; }
+        public DbSet<Actor> Actors { get; set; }
+        public DbSet<Cast> Casts { get; set; }
         public DbSet<User> Users { get; set; }
     }
 }

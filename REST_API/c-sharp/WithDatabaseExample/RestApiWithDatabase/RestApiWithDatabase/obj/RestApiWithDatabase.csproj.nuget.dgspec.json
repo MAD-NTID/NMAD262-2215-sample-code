@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xamarin_2355\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj": {}
+    "C:\\Users\\jdbnts\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xamarin_2355\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj": {
+    "C:\\Users\\jdbnts\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xamarin_2355\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj",
+        "projectUniqueName": "C:\\Users\\jdbnts\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj",
         "projectName": "RestApiWithDatabase",
-        "projectPath": "C:\\Users\\xamarin_2355\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj",
-        "packagesPath": "C:\\Users\\xamarin_2355\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xamarin_2355\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\obj\\",
+        "projectPath": "C:\\Users\\jdbnts\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\RestApiWithDatabase.csproj",
+        "packagesPath": "C:\\Users\\jdbnts\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jdbnts\\Desktop\\NMAD262-2215-sample-code\\REST_API\\c-sharp\\WithDatabaseExample\\RestApiWithDatabase\\RestApiWithDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
-          "C:\\Users\\xamarin_2355\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jdbnts\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

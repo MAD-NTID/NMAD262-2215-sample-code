@@ -31,5 +31,12 @@ namespace RestApiWithDatabase.Controllers
         {
             return Ok(await this.repository.Get(id));
         }
+
+        [AllowAnonymous]
+        [HttpGet("showme")]
+        public async Task<ActionResult> ShowMeEveryDetails()
+        {
+            return Ok(await this.repository.AllDetail());
+        }
     }
 }

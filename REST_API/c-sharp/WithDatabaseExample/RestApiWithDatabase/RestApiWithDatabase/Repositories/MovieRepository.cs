@@ -22,6 +22,23 @@ namespace RestApiWithDatabase.Repositories
             return await this.database.Movies.ToListAsync();
         }
 
+        public async Task<IEnumerable<MovieDetail>> AllDetail()
+        {
+            var query = (from m in database.Movies
+                join c in database.Casts on m.Id equals c.MovieId
+                join a in database.Actors on c.ActorId equals a.Id
+
+                select new MovieDetail()
+                {
+                    Title = m.Title,
+                    Rating = m.Rating,
+                    ActorName = a.Name,
+                    Id = m.Id
+                });
+
+            return query;
+        }
+
         public async Task<MovieModel> Create(MovieModel movie)
         {
             await this.database.AddAsync(movie);

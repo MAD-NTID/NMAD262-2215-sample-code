@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = RestApiWithDatabase
-build_property.ProjectDir = C:\Users\xamarin_2355\Desktop\NMAD262-2215-sample-code\REST_API\c-sharp\WithDatabaseExample\RestApiWithDatabase\RestApiWithDatabase\
+build_property.ProjectDir = C:\Users\jdbnts\Desktop\NMAD262-2215-sample-code\REST_API\c-sharp\WithDatabaseExample\RestApiWithDatabase\RestApiWithDatabase\

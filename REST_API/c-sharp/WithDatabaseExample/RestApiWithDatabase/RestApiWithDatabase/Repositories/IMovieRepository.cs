@@ -13,6 +13,7 @@ namespace RestApiWithDatabase.Repositories
         Task<MovieModel> Get(int movieId);
         void Delete(int movieId);
         Task<IEnumerable<MovieModel>> All();
+        Task<IEnumerable<MovieDetail>> AllDetail();
 
 
     }
